@@ -16,9 +16,9 @@ app.config['MYSQL_HOST'] = getenv('MYSQL_HOST')
 app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 
 db = MySQL(app)
-mongo = PyMongo(app)
+# mongo = PyMongo(app)
 
-cli = mongo.MongoClient('localhost', 27017)
+# cli = mongo.MongoClient('localhost', 27017)
 
 @app.route('/')
 def index():
